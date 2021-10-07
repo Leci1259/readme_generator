@@ -1,4 +1,5 @@
 # ${answers.title}
+${license.badge}
 ## Description
 ${answers.description}
 
@@ -10,8 +11,6 @@ ${answers.description}
 - [Tests](#tests)
 - [Questions](#questions)
 - [License](#license)
-
-
 
 ## Installation
 ${answers.installation}
@@ -32,3 +31,4 @@ ${answers.email}
 [Gitub Repo](https://https://github.com/${answers.github}})
 
 ## License
+${licenseTxt}
