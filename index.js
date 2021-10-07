@@ -1,9 +1,10 @@
-//grab files
+//grab packages needed for application
 const fs =require('fs');
 const inquirer = require('inquirer');
 
-//ask questions
+//use inquirer
 inquirer
+    //ask questions
     .prompt([
         {
             type: 'input',
@@ -22,6 +23,11 @@ inquirer
         },
         {
             type: 'input',
+            message: 'Type out install code',
+            name: 'installCode',
+        },
+        {
+            type: 'input',
             message: 'How are you using this?',
             name: 'usage',
         },
@@ -32,14 +38,14 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Tests?',
+            message: 'Test Code?',
             name: 'tests',
         },
         {
             type: 'rawlist',
             message: 'What kind of license?',
             name: 'License',
-            choices:[],
+            choices:["MIT",  "APACHE 2.0", "GPL 3.0", "BSD 3", "None"],
         },
         {
             type: 'input',
@@ -57,9 +63,10 @@ inquirer
             name: 'contact',
         },
     ])
+    //use answers
     .then(function(answers) {
 
-        //fill string template literal
+        //fill string template literal with answers
         const txt = ``;
 
         //output to new file
