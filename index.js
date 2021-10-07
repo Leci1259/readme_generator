@@ -57,3 +57,13 @@ inquirer
             name: 'contact',
         },
     ])
+    .then(function(answers) {
+
+        //fill string template literal
+        const txt = ``;
+
+        //output to new file
+        fs.writeFile('README.md', txt, (err) =>
+            err ? console.error(err) : console.log('Success!'))
+        ;
+    });
