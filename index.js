@@ -65,8 +65,8 @@ inquirer
     ])
     //use answers
     .then(function(answers) {
-        const licenseTxt;
-        const licenseBadge;
+        var licenseTxt;
+        var licenseBadge;
 
         //check for license type
         switch (answers.license) {
@@ -91,11 +91,44 @@ inquirer
         };
 
         //fill string template literal with answers
-        const txt = ``;
+        const txt = `# ${answers.title} \n
+        ${license.badge} \n
+        ## Description \n
+        ${answers.description} \n
+        
+        ## Table of Contents \n
+        -[Description](#description) \n
+        - [Installation](#installation) \n
+        - [Usage](#usage) \n
+        - [Contribution](#credits) \n
+        - [Tests](#tests) \n
+        - [Questions](#questions) \n
+        - [License](#license) \n
+        
+        ## Installation \n
+        ${answers.installation} \n
+        
+        ${answers.installCode} \n
+        ## Usage \n
+        ${answers.usage} \n
+        
+        ## Contribution \n
+        ${answers.contribution} \n
+        
+        ## Tests \n
+        ${answers.tests} \n
+        
+        ## Questions \n
+        ${answers.contact} \n
+        ${answers.email} \n 
+        [Gitub Repo](https://https://github.com/${answers.github}}) \n
+        
+        ## License \n
+        ${licenseTxt} \n`;
 
 
         //output to new file
-        fs.writeFile('README.md', txt, (err) =>
+        fs.writeFile('generatedREADME.md', txt, (err) =>
             err ? console.error(err) : console.log('Success!'))
         ;
     });
