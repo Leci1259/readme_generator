@@ -6,8 +6,10 @@ Application that will generate a ReadME.md file based on the answers given to qu
 ## Link to Repo
 [ReadMe Generator](https://github.com/Leci1259/readme_generator)
 
-## Website Preview
-![Website Image]()
+## Application Preview
+
+
+[![Application preview]({image-ur})]({video-url} "Video Walkthrough")
 
 ## Technologies used
 Javascript, Node.js, Inquirer npm
