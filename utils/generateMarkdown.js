@@ -127,9 +127,7 @@ function generateMarkdown(answers) {
   Github: [Github Repo](https://github.com/${answers.github})
   
   
-  ## License
-
-  ${licenseTxt}`
+  ${renderLicenseSection(answers.license)}`
 ;
 }
 
