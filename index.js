@@ -18,11 +18,6 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Type out Installation Instructions',
-            name: 'installation',
-        },
-        {
-            type: 'input',
             message: 'Type out install code',
             name: 'installCode',
         },
@@ -71,7 +66,7 @@ inquirer
         //check for license type
         switch (answers.license) {
             case 'MIT':
-                licenseTxt="# Released under MIT License Copyright (c) 2013 Mark Otto. Copyright (c) 2017 Andrew Fong";
+                licenseTxt="Released under MIT License Copyright (c) 2013 Mark Otto. Copyright (c) 2017 Andrew Fong";
                 licenseBadge="[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
                 break;
             case 'APACHE 2.0':
@@ -92,12 +87,12 @@ inquirer
 
         //fill string template literal with answers
         const txt = `# ${answers.title} \n
-        ${license.badge} \n
+        ${licenseBadge} \n
         ## Description \n
         ${answers.description} \n
         
         ## Table of Contents \n
-        -[Description](#description) \n
+        - [Description](#description) \n
         - [Installation](#installation) \n
         - [Usage](#usage) \n
         - [Contribution](#credits) \n
@@ -106,7 +101,7 @@ inquirer
         - [License](#license) \n
         
         ## Installation \n
-        ${answers.installation} \n
+        Install Node.js. Run the following command in the terminal:
         
         ${answers.installCode} \n
         ## Usage \n
@@ -120,8 +115,9 @@ inquirer
         
         ## Questions \n
         ${answers.contact} \n
-        ${answers.email} \n 
-        [Gitub Repo](https://https://github.com/${answers.github}}) \n
+        <a href="mailto:${answers.email}">Send me an email if you have any questions.</a> \n
+        <a href="https://github.com/${answers.github}">Github for ${answers.github}</a> \n
+        
         
         ## License \n
         ${licenseTxt} \n`;
