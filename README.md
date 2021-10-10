@@ -9,7 +9,7 @@ Application that will generate a ReadME.md file based on the answers given to qu
 ## Application Preview
 
 
-[![Application preview]({https://github.com/Leci1259/readme_generator/blob/main/utils/img/Screenshot%202021-10-10%20144625.png})]({https://drive.google.com/file/d/1bLaz9ce2U-uRQkp70Fx1HLgO8TMcU52O/view?usp=sharing} "Video Walkthrough")
+[![Application preview](https://github.com/Leci1259/readme_generator/blob/main/utils/img/Screenshot%202021-10-10%20144625.png\)](https://drive.google.com/file/d/1bLaz9ce2U-uRQkp70Fx1HLgO8TMcU52O/view?usp=sharing "Video Walkthrough")
 
 ## Technologies used
 Javascript, Node.js, Inquirer npm
