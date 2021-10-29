@@ -93,6 +93,8 @@ function generateMarkdown(answers) {
   
   - [Usage](#usage) 
 
+  - [Application](#application) 
+
   - [Contribution](#credits) 
 
   - [Tests](#tests) 
@@ -111,6 +113,10 @@ function generateMarkdown(answers) {
   ## Usage
 
   ${answers.usage}
+
+  ## Application
+  [Depolyed Application]()
+  [Screenshot]()
   
   ## Contribution 
 
