@@ -115,7 +115,7 @@ function generateMarkdown(answers) {
   ${answers.usage}
 
   ## Application
-  [Depolyed Application]()
+  [Deployed Application]()
   [Screenshot]()
   
   ## Contribution 
@@ -134,7 +134,7 @@ function generateMarkdown(answers) {
   
   
   ${renderLicenseSection(answers.license)}`
-;
+    ;
 }
 
 module.exports = generateMarkdown;
